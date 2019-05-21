@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>メッセージ</title>
+</head>
+<body>
+<p>メッセージをどうぞ！</p>
+<form action="/java_master_war_exploded/message" method="post">
+    <label>
+        <span>メッセージ：</span>
+        <input type="text" placeholder="ex:頑張れ！" name="message">
+        <br>
+    </label>
+    <label>
+        <input type="radio" value="big" name="textSize" checked="checked">大
+    </label>
+    <label>
+        <input type="radio" value="middle" name="textSize">中
+    </label>
+    <label>
+        <input type="radio" value="small" name="textSize">小
+    </label>
+    <input type="submit" value="送信">
+</form>
+</body>
+</html>
